@@ -71,5 +71,5 @@ write(sql_update_openmrs_uuid,file=sql_file_openmrs,append=TRUE)
   
 }
 
-
-
+# salvar os logs
+save(openmrs_patients, file = paste0('data/cs_',openmrs.db.name,'_openmrs_patients_wrong_uuid.RData'))
